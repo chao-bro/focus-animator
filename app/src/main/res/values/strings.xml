@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FocusAnimator</string>
+    <string name="module01">无线投影</string>
+    <string name="module02">高清</string>
+    <string name="module03">音响模式</string>
+    <string name="module06">关于</string>
+    <string name="module07">应用市场</string>
+    <string name="module04">设定</string>
+    <string name="module05">文件管理器</string>
+</resources>
