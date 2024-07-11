@@ -7,6 +7,7 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:windowAnimationStyle">@style/Animation</item>
     </style>
+
     <style name="Animation">
         <item name="android:activityOpenEnterAnimation">@null</item>
         <item name="android:activityOpenExitAnimation">@null</item>

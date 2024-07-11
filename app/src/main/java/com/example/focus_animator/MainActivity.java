@@ -1,5 +1,6 @@
 package com.example.focus_animator;
 
+import android.annotation.SuppressLint;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.net.ConnectivityManager;
@@ -61,18 +62,12 @@ public class MainActivity extends AppCompatActivity {
             ivBlueT.setImageResource(R.drawable.ic_bluetooth_off);
             Log.d("Bluetooth", "Bluetooth is not enabled or device does not support Bluetooth");
         } else {
+            //获取已经配对的蓝牙设备
             Set<BluetoothDevice> bondedDevices = btAdapter.getBondedDevices();
 
             if (bondedDevices != null && !bondedDevices.isEmpty()) {
-                for (BluetoothDevice b : bondedDevices
-                ) {
-                    if (b.isConnected()) {
-                        Log.d(TAG, "initViews: device connected" + b.getAddress());
-                        ivBlueT.setImageResource(R.drawable.ic_bluetooth);
-                        break;
-                    }
-
-                }
+                Log.d(TAG, "initViews: device connected");
+                ivBlueT.setImageResource(R.drawable.ic_bluetooth);
                 //TODO 蓝牙未连接
             }
         }

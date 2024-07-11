@@ -2,16 +2,15 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_focused="true">
         <layer-list>
-            <item android:drawable="@drawable/info"/>
+            <item android:drawable="@drawable/info" />
             <item>
                 <shape android:shape="rectangle">
-                    <corners android:radius="5dp"/>
-                    <stroke android:width="5dp" android:color="#2C8BFF"/>
-                    <padding android:bottom="15dp" android:left="15dp"
-                        android:right="15dp" android:top="15dp"/>
+                    <corners android:radius="5dp" />
+                    <stroke android:width="5dp" android:color="#2C8BFF" />
+                    <padding android:bottom="15dp" android:left="15dp" android:right="15dp" android:top="15dp" />
                 </shape>
             </item>
         </layer-list>
     </item>
-    <item android:drawable="@drawable/info" android:state_focused="false"/>
+    <item android:drawable="@drawable/info" android:state_focused="false" />
 </selector>
