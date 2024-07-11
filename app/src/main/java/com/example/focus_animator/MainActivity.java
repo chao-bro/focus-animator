@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             //获取信号强度
             if (info != null) {
                 int strong = WifiManager.calculateSignalLevel(info.getRssi(), 3);
+
                 ivWifi.setImageResource(getResIdByStrength(strong));
             }
         } else {
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getResIdByStrength(int strong) {
+        Log.d(TAG, "getResIdByStrength: wifi strength is " + strong);
         switch (strong) {
             case 0:
                 return R.drawable.ic_wifi1;
@@ -89,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
